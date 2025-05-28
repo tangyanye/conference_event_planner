@@ -37,7 +37,6 @@ export const venueSlice = createSlice({
   
   ],
   reducers: {
-   
     incrementQuantity: (state, action) => {
       const { payload: index } = action;
       if (state[index]) {
@@ -56,5 +55,4 @@ export const venueSlice = createSlice({
 });
 
 export const { incrementQuantity, decrementQuantity } = venueSlice.actions;
-
 export default venueSlice.reducer;
